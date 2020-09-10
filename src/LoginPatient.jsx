@@ -1,8 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUser, faLock, faPhone} from '@fortawesome/free-solid-svg-icons';
+import { faUser, faLock} from '@fortawesome/free-solid-svg-icons';
 import login from '../src/image/login.svg';
-import register from '../src/image/register.svg';
 
 const LoginPatient=()=>{
 	return(

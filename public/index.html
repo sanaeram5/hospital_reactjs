@@ -11,10 +11,31 @@
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    
+    <link href="https://cdn.syncfusion.com/ej2/material.css" rel="stylesheet" type="text/css"/>
     <title>React App</title>
   </head>
   <body>
+    <script>
+    (function($){
+  function floatLabel(inputType){
+    $(inputType).each(function(){
+      var $this = $(this);
+      // on focus add cladd active to label
+      $this.focus(function(){
+        $this.next().addClass("active");
+      });
+      //on blur check field and remove class if needed
+      $this.blur(function(){
+        if($this.val() === '' || $this.val() === 'blank'){
+          $this.next().removeClass();
+        }
+      });
+    });
+  }
+  // just add a class of "floatLabel to the input field!"
+  floatLabel(".floatLabel");
+})(jQuery);
+    </script>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--

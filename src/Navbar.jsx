@@ -24,18 +24,14 @@ const Navbar = () =>{
       <li className="nav-item">
         <NavLink exact activeClassName="menu_active" className="nav-link" to="/bookme">Book-Me</NavLink>
       </li>
-      <li className="nav-item dropdown">
-        <NavDropdown title="Register" id="collasible-nav-dropdown">
-        <NavDropdown.Item href="/registerpatient">Patient</NavDropdown.Item>
-        <NavDropdown.Divider />
-        <NavDropdown.Item href="/registerdoctor">Doctor</NavDropdown.Item>
-      </NavDropdown>
+      <li className="nav-item">
+        <NavLink exact activeClassName="menu_active" className="nav-link" to="/registerpatient">Register</NavLink>
       </li>
       <li className="nav-item dropdown">
         <NavDropdown title="Login" id="collasible-nav-dropdown">
-        <NavDropdown.Item href="/loginpatient">Patient</NavDropdown.Item>
+        <NavDropdown.Item className="hove" href="/loginpatient">Patient</NavDropdown.Item>
         <NavDropdown.Divider />
-        <NavDropdown.Item href="/logindoctor">Doctor</NavDropdown.Item>
+        <NavDropdown.Item className="hove" href="/logindoctor">Doctor</NavDropdown.Item>
       </NavDropdown>
       </li>
     </ul>
