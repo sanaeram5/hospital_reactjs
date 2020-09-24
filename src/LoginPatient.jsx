@@ -19,7 +19,7 @@ const LoginPatient=()=>{
 							<FontAwesomeIcon className="i" icon={faLock} size="lg" />
 							<input type="password" placeholder="Password" />
 						</div>
-							<input type="submit" value="Login" class="btn btn-outline-danger" />
+						<input type="submit" value="Login" className="btn btn-outline-danger" />
 					</form>
 				</div>
 			</div>
